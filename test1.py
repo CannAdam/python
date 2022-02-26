@@ -1,7 +1,7 @@
-n = 10
-
-while n > 0:
-    print(n)
-    n = n - 1
-print("Blastoff!!")
-print(n)
+largest = None
+print("Before:", largest)
+for i in [3, 41, 12, 9, 74, 15]:
+    if largest is None or i > largest:
+        largest = i
+    print("Loop:", i, largest)
+print("largest:", largest)
